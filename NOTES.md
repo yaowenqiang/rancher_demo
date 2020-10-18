@@ -16,3 +16,18 @@
 
 > 服务器初始化设置
 > https://www.cnbugs.com/post-3190.html
+
+# install k3s
+
+#3 change yum source to ali 
+
+> yum install wget
+> mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
+> wget -O /etc/yum.repos.d/CentOS-Base.repo https://mirrors.aliyun.com/repo/Centos-7.repo
+> yum makecache
+
+
+## install k3s
+
+> curl -sfL https://get.k3s.io | sh -
+
